@@ -59,7 +59,7 @@ df_copy=df_copy[(df_copy['BloodPressure']!=0) & (df_copy['BMI']!=0) & (df_copy['
 ## split dataset on outcome from 70% to 30%
 X=df_copy.drop('Outcome',axis=1)
 y=df_copy['Outcome']
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.30,random_state=10)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.20,random_state=10)
 print(X_train.shape)
 print(X_test.shape)
 print(y_train.shape)
